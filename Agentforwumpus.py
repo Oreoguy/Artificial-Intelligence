@@ -29,7 +29,7 @@ class Agent:
         validActions = ['Up','Down','Left','Right']
         assert action in validActions, 'Invalid Action.'
         if self.__isAlive == False:
-            print('Action cannot be performed. Agent is DEAD. Location:{0}'.format(self.__curLoc))
+            print('Action cannot be performed. Agent is back to the start. Location:{0}'.format(self.__curLoc))
             return False
         if self.__hasExited == True:
             print('Action cannot be performed. Agent has exited the Wumpus world.'.format(self.__curLoc))
