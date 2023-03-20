@@ -1,10 +1,10 @@
 class Agent:
     def __init__(self):
         self.__wumpusWorld = [
-                 ['','','P',''], 
-                 ['P','','W',''],  
-                 ['','P','P',''], 
                  ['','P','',''], 
+                 ['P','','W',''],  
+                 ['','','',''], 
+                 ['P','','',''], 
                 ] 
         self.__curLoc = [1,1]
         self.__isAlive = True

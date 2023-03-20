@@ -46,27 +46,6 @@ def pre_order(root, parent, K):
     check = check and pre_order(root.right, root, K)
 
     # Return the check at the end
-    return check
-def BT(csp, node, visited_nodes):
-    visited_nodes.append(node)
-    if is_leaf_node(node):
-        if is_goal_node(node):
-            return True
-        else:
-            return False
-    else:
-        for c in node.children:
-            if BT(csp, c, visited_nodes):
-                propagate_constraints(csp, c)
-                return True
-        return False
-
-
-
-visited_nodes = []
-BT(csp, root_node, visited_nodes)
-print("Visited nodes:", len(visited_nodes))
-
 # Read inputs
 #1
 N_V = int(input("Enter total number of variables: "))
