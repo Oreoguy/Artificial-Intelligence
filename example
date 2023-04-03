@@ -1,0 +1,10 @@
+Enter the number of variables: 4
+Enter the variable names: A B C D
+Enter rule 1: IF A AND B THEN C
+Enter rule 2: IF B OR C THEN D
+Enter rule 3: IF NOT A THEN B
+Enter fact 1: A
+Enter value of fact 1 (T/F): T
+Enter fact 2: D
+Enter value of fact 2 (T/F): F
+Rules fired: ['C', 'D']
