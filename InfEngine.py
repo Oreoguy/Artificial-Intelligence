@@ -29,8 +29,9 @@ def check_rules(fact1, fact2, rules):
     for rule in rules:
         if parse_expression(rule[1], values):
             fired_rules.append(rule[0])
+            print(rule[0])
             values[rule[0]] = True
-    return fired_rules
+    print (fired_rules)
 
 
 # main program
@@ -47,5 +48,5 @@ for i in range(3):
     rules.append((var, rule[3:-len(var)-1]))
 fact1 = (input("Enter fact 1: "), input("Enter value of fact 1 (T/F): ").upper() == "T")
 fact2 = (input("Enter fact 2: "), input("Enter value of fact 2 (T/F): ").upper() == "T")
-fired_rules = check_rules(fact1, fact2, rules)
+fired_rules = check_rules(fact1 ,fact2 ,rules)
 print ("Rules_fired :",rules)
