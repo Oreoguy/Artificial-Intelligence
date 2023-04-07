@@ -1,4 +1,4 @@
-from Agentforwumpus import *
+from W1 import *
 import copy
 numberofcalls = 0
 class KnowledgeBase:
