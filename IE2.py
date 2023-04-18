@@ -40,7 +40,8 @@ def unsatisfied_goals(rules,goal_var, facts):
  
 
     return unsatisfied_goals
-
-# Call the function with the given inputs and print the result
 facts = [fact1, fact2]
-print(unsatisfied_goals)
+unsatisfied_goals = check_goals(rules, goal_var, facts)
+# Call the function with the given inputs and print the result
+print (facts )
+print (unsatisfied_goals)
