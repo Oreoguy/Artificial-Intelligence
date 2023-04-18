@@ -1,4 +1,5 @@
 import numpy as np
+import skfuzzy as fuzzy
 import matplotlib.pyplot as plt
 
 def equation_of_line(x1, y1, x2, y2):
